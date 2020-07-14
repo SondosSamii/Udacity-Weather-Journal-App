@@ -54,3 +54,10 @@ function sendWeatherData(req, res) {
   res.send(newWeather);
   console.log(newWeather);
 }
+
+app.get('/all', getWeatherData);
+
+function getWeatherData(req, res) {
+  res.send(weatherData);
+  console.log(weatherData);
+}
